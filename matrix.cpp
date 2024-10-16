@@ -15,3 +15,9 @@ void out(const int* const* t,size_t m, size_t n){
     std::cout<<"\n";
   }
 }
+void delet(int ** t, size_t m){
+for (size_t i = 0; i<m; ++i){
+    delete [] t[i];
+  }
+delete [] t;
+}
