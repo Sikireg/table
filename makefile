@@ -1,2 +1,2 @@
-para:main.cpp
-	g++ -o para main.cpp
+para:main.cpp matrix.cpp
+	g++ -o $@ $^

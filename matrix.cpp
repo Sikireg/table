@@ -1,15 +1,4 @@
-#include<iostream>
 #include "matrix.hpp"
-void delet(int** t, size_t m, size_t n);
-int ** ct_table(size_t m,size_t n);
-void inn(int** t,size_t m, size_t n);
-void out(const int* const* t,size_t m, size_t n);
-int main(){
-  size_t M=0,N = 0;
-  std::cin >> M >>N;
-  int ** t = ct_table(M,N);
-  delet(t,M,N);
-}
 void inn(int** t,size_t m, size_t n){
   for (size_t i = 0; i<M,i++){
     for (size_t j = 0; j<N,j++){
@@ -26,4 +15,3 @@ void out(const int* const* t,size_t m, size_t n){
     std::cout<<"\n";
   }
 }
-
