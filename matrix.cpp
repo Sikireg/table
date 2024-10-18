@@ -26,7 +26,7 @@ int ** cr_table(size_t m,size_t n){
   size_t created = 0;
   try{
     for(;created<n;++created){
-      created = new int[n];
+      t[created] = new int[n];
     }
   }
   catch(const std::bad.alloc & e){
