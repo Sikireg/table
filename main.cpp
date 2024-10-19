@@ -7,7 +7,7 @@ int main(){
     std::cerr<<"Not a number\n";
     return 1;
   }
-  int ** t;
+  int ** t = nullptr;
   try{
     int ** t = ct_table(M,N);
   }
@@ -16,6 +16,10 @@ int main(){
     return 1;
   };
   inn(t,M,N);
+  if (std::cin.fail()) {
+    delet(t,M,N);
+    return 1;
+  }
   out(t,M,N);  
   delet(t,M,N);
 }
