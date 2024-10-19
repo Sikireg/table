@@ -7,6 +7,7 @@ int main(){
     std::cerr<<"Not a number\n";
     return 1;
   }
+  int ** t;
   try{
     int ** t = ct_table(M,N);
   }
