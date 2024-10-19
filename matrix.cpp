@@ -30,7 +30,7 @@ int ** cr_table(size_t m,size_t n){
     }
   }
   catch(const std::bad_alloc &e){
-    dt(t,created);
+    delet(t,created);
     throw;
   }
   return t;
