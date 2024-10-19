@@ -29,7 +29,7 @@ int ** cr_table(size_t m,size_t n){
       t[created] = new int[n];
     }
   }
-  catch(const std::bad.alloc & e){
+  catch(const std::bad_alloc &e){
     dt(t,created);
     throw;
   }
