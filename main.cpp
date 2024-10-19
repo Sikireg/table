@@ -17,10 +17,10 @@ int main(){
   };
   inn(t,M,N);
   if (std::cin.fail()) {
-    delet(t,M,N);
+    delet(t,M);
     return 1;
   }
   out(t,M,N);  
-  delet(t,M,N);
+  delet(t,M);
 }
 
