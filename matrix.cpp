@@ -1,19 +1,19 @@
 #include "matrix.hpp"
 #include <iostream>
-void inn(int** t,size_t m, size_t n){
+void inn(std::istream & in, int** t,size_t m, size_t n){
   for (size_t i = 0; i<m;i++){
     for (size_t j = 0; j<n;j++){
-      std::cin>>t[i][j];
+      in>>t[i][j];
     }
   }
 }
-void out(const int* const* t,size_t m, size_t n){
+void output(std::ostream & out,const int* const* t,size_t m, size_t n){
   for(size_t i = 0; i<m; i++){
     std::cout<<t[i][0];
     for (size_t j = 1; j<n; j++){
-      std::cout << " "<<t[i][j];
+      out << " "<<t[i][j];
     }
-    std::cout<<"\n";
+    out << "\n";
   }
 }
 void delet(int ** t, size_t m){
@@ -35,4 +35,13 @@ int ** ct_table(size_t m,size_t n){
     throw;
   }
   return t;
+}
+
+size_t Matrix::get_row() const
+{
+  return m_;
+}
+size_t Matrix::get_column() const
+{
+  return n_;
 }
