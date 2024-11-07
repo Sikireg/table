@@ -13,13 +13,6 @@ int main(){
   {
     return 1;
   }
-//  try{
-  //  int ** t = ct_table(M,N);
- // }
- // catch(const std::bad_alloc & e){
-//    std::cerr<<"Out of memory\n";
-    //return 1;
-  //};
   mtx.onn(std::cout);
 }
 
